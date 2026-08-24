@@ -1,43 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Ejercicio Formulario</title>
     <style>
-        form {
-            display: block;
-            margin-top: 0em;
-        }
+      form {
+        display: block;
+        margin-top: 0em;
+      }
     </style>
-</head>
-<body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
-<!--Agregue el atributo legend-->
+  </head>
+  <body>
+    <!--Cree un Formulario con los campos que se proponen a continuacion-->
+    <!--Agregue el atributo legend-->
 
-<!--Si tienes dudas de como hacer un formulario, puedes consultar:
+    <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
-
-</body>
+    <h3>
+      Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!
+    </h3>
+    <form name="form-subscripcion">
+      <p>Nombre: <input type="text" placeholder="Ingrese su nombre"></p>
+      <p>Apellido: <input type="text" placeholder="Ingrese su apellido"</p>
+    <p>
+      Sexo: 
+    Masculino <input type="radio" name="sex" value="Masculino">
+    Femenino <input type="radio" name="sex" value="Femenino">
+    </p> 
+    <p>
+       Edad: <input type="number" name="edad" placeholder="edad">
+    </p>
+    <p>
+        Email: <input type="email" name="email" placeholder="usuario@dominio.com">
+    </p>
+    <p>
+    Usuario: <input type="text" name="usuario" placeholder="Nombre de usuario">
+    </p>
+    <p>
+    Password: <input type="password" name="password" placeholder="Contraseña">
+    </p>
+    <p>
+    Confirmar Password: <input type="password" name="password-confirmar" placeholder="Repita Contraseña">
+    </p>
+    <p>
+    Tipo de servicio: 
+    <select name="tipo-de-servicio">
+    <option value="Free">Free</option>
+    <option value="Standard">Standard</option>
+    <option value="Premium">Premium</option>
+    </select>
+    </p>
+    <p>
+    Tema:
+    Política <input type="checkbox" value="Política">
+    Negocios <input type="checkbox" value="Negocios">
+    Tecnología <input type="checkbox" value="Tecnología">
+    Salud <input type="checkbox" value="Salud">
+    </p>
+    <p>
+        Agregue un comentario:
+    <textarea>
+        Deje su comentario
+    </textarea>
+    </p>
+    <p>
+      <button>Boton de Enviar</button>
+      </p>
+    </form>
+  </body>
 </html>
