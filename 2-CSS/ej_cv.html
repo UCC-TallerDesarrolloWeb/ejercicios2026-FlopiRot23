@@ -1,44 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>CV Nombre Apellido</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV Florencia Rotondi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imagenes/fav.png" />
+    <style>
+      div {
+        border: 2px solid burlywood;
+        margin: 10px;
+        padding: 5px 30px;
+        background-color: beige;
+        opacity: 0.8;
+        border-radius: 15px;
+        width: 500px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .imagen-izquierda {
+        float: left;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: "Caacupe One", sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+      }
 
-<div>
-    <h1>Nombre Alumno</h1>
-    <h2>Ing. en Computacion</h2>
-</div>
-
-<div>
-    <h3>Datos Personales</h3>
-    <p><span>Fecha de Nacimiento:</span> dd/mm/aaaa</p>
-    <p><span>Email:</span> email@email.com</p>
-</div>
-
-<div>
-    <h3>Formacion Academica</h3>
-    <p><span>Carrera:</span> Ingeniería XXXXX</p>
-    <p><span>Universidad:</span> Universidad Católica de Córdoba</p>
-    <p><span>Año de Ingreso:</span> 2018</p>
-</div>
-
-<div>
-    <h3>Cursos</h3>
+      h1,
+      h2,
+      p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      #nombre-principal {
+        font-size: 32px;
+        letter-spacing: 1px;
+      }
+      .cursos {
+        border: 1px dashed burlywood;
+        background-color: white;
+        box-shadow: none;
+        margin: 5px 0;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="imagenes/icono_usuario.jpg"
+        alt="imagen de Florencia Rotondi"
+        class="imagen-izquierda"
+      />
+      <h1 id="nombre-principal">Florencia Rotondi</h1>
+      <h2>Ing. en Informática</h2>
+    </div>
 
     <div>
+      <h3>Datos Personales</h3>
+      <p><span>Fecha de Nacimiento:</span> 22/11/2004</p>
+      <p><span>Email:</span> flopirot23@email.com</p>
+    </div>
+
+    <div>
+      <h3>Formacion Academica</h3>
+      <p><span>Carrera:</span> Ingeniería Informática</p>
+      <p><span>Universidad:</span> Universidad Católica de Córdoba</p>
+      <p><span>Año de Ingreso:</span> 2025</p>
+    </div>
+
+    <div>
+      <h3>Cursos</h3>
+
+      <div class="cursos">
         <h4>Nombre Curso 1</h4>
         <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
-    </div>
+        <p><span>Año:</span> XXXX</p>
+      </div>
 
-    <div>
+      <div class="cursos">
         <h4>Nombre Curso 2</h4>
         <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
+        <p><span>Año:</span> XXXX</p>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>
