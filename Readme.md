@@ -38,8 +38,8 @@
 - [x] Incrustado
 - [x] Estilo con Descendientes
 - [x] Pseudo Clases
-- [ ] CV
-- [ ] Backgrounds
+- [x] CV
+- [x] Backgrounds
 - [ ] Position
 - [ ] 2 Columnas
 - [ ] Grid

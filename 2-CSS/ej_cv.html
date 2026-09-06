@@ -35,6 +35,7 @@
         text-align: center;
         font-family: "Caacupe One", sans-serif;
         background: linear-gradient(to right, #ff7e5f, #feb47b);
+        padding-top: 200px;
       }
 
       h1,
@@ -53,10 +54,17 @@
         margin: 5px 0;
         width: auto;
       }
+      .header-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 500px;
+        z-index: 10;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div class="header-div">
       <img
         src="imagenes/icono_usuario.jpg"
         alt="imagen de Florencia Rotondi"
