@@ -40,8 +40,8 @@
 - [x] Pseudo Clases
 - [x] CV
 - [x] Backgrounds
-- [ ] 2 Columnas
-- [ ] Grid
+- [x] 2 Columnas
+- [x] Grid
 - [ ] grid-areas
 - [ ] Mejora
 - [ ] Transitions
