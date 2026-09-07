@@ -42,8 +42,8 @@
 - [x] Backgrounds
 - [x] 2 Columnas
 - [x] Grid
-- [ ] grid-areas
-- [ ] Mejora
+- [x] grid-areas
+- [x] Mejora
 - [ ] Transitions
 - [ ] Viewport
 - [ ] Responsive
