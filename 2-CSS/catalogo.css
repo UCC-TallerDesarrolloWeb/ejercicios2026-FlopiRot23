@@ -36,4 +36,5 @@ main {
     "nav nav nav nav"
     "aside main main main"
     "footer footer footer footer";
+  gap: 10px;
 }
