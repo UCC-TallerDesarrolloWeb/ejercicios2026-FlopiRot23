@@ -40,7 +40,6 @@
 - [x] Pseudo Clases
 - [x] CV
 - [x] Backgrounds
-- [ ] Position
 - [ ] 2 Columnas
 - [ ] Grid
 - [ ] grid-areas
