@@ -6,8 +6,60 @@
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="catalogo.css" type="text/css" />
   </head>
-  <body>
-    <main>
+  <body class="gird-container">
+    <header class="item1">Catálogo de Productos</header>
+    <nav class="item2">Links de navegacion</nav>
+    <aside class="item3">
+      <form name="filter" id="filter">
+        <fieldset>
+          <legend>Buscador</legend>
+          <label for="search">Bucar</label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Buscar....."
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Precios</legend>
+          <p>
+            <label for="price-min">Minimo</label>
+            <input type="number" name="price-min" id="price-min" min="0" />
+          </p>
+          <p>
+            <label for="price-max">Maximo</label>
+            <input type="number" name="price-max" id="price-max" min="0" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Tipo de Productos</legend>
+          <p>
+            <input
+              type="checkbox"
+              name="tipo"
+              id="protectores"
+              value="protectores"
+            />
+            <label for="protectores">Protectores</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              name="tipo"
+              id="entrenamiento"
+              value="entrenamiento"
+            />
+            <label for="protectores">Entrenamiento</label>
+          </p>
+          <p>
+            <input type="checkbox" name="tipo" id="dobok" value="dobok" />
+            <label for="dobok">Dobok</label>
+          </p>
+        </fieldset>
+      </form>
+    </aside>
+    <main class="item4">
       <div>
         <img
           src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/cabezal-cerrado.webp"
@@ -51,5 +103,6 @@
         <h3>Protectores de Pies</h3>
       </div>
     </main>
+    <footer class="item5">Contacto</footer>
   </body>
 </html>
