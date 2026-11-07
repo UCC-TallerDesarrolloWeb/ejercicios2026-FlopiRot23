@@ -1,0 +1,10 @@
+@use 'variables' as *;
+@use 'anidados';
+
+// Uso de una variable de color en un elemento
+body {
+  margin: 0;
+  font-family: $fuente-principal;
+  background-color: $color-claro;
+  color: $color-oscuro;
+}

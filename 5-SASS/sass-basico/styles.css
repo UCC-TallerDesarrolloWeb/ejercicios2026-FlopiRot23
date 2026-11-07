@@ -1,0 +1,70 @@
+header {
+  background-color: #6c5ce7;
+  color: #f5f6fa;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header nav {
+  margin-top: 10px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #fdcb6e;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+main .tarjeta {
+  background-color: #00b894;
+  color: #2d3436;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+main .tarjeta h2 {
+  margin-top: 0;
+}
+main .tarjeta p {
+  line-height: 1.5;
+}
+main .tarjeta-oscura {
+  background-color: #2d3436;
+  color: #fdcb6e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #2d3436;
+  color: #f5f6fa;
+  text-align: center;
+  padding: 15px;
+}
+footer p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #2d3436;
+}

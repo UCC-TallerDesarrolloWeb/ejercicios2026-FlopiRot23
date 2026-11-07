@@ -1,0 +1,5 @@
+// Mixin que recibe color de fondo y color de letras
+@mixin colores($fondo, $letras) {
+  background-color: $fondo;
+  color: $letras;
+}

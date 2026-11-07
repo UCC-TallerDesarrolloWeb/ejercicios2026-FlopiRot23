@@ -1,0 +1,75 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Estilos anidados (descendientes)
+header {
+  @include colores($color-primario, $color-claro);
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      li {
+        a {
+          color: $color-acento;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+
+  .tarjeta {
+    @include colores($color-secundario, $color-oscuro);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .tarjeta-oscura {
+    @include colores($color-oscuro, $color-acento);
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+
+footer {
+  @include colores($color-oscuro, $color-claro);
+  text-align: center;
+  padding: 15px;
+
+  p {
+    margin: 0;
+  }
+}
