@@ -1,0 +1,150 @@
+@use 'sass:color';
+@use 'sass:meta';
+@use 'variables' as *;
+
+// ===== Estilos desktop =====
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $fuente-texto;
+  background-color: $color-arena;
+  color: $color-oscuro;
+}
+
+h1, h2, h3 {
+  font-family: $fuente-titulos;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: $color-oscuro;
+  color: $color-arena;
+
+  .logo {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $color-arena;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: $color-madera;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 120px 60px;
+  text-align: center;
+  background: linear-gradient(rgba(62, 58, 54, 0.6), rgba(62, 58, 54, 0.6)),
+    url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400') center / cover;
+  color: $color-blanco;
+
+  h2 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: $color-madera;
+    color: $color-blanco;
+    text-decoration: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: color.adjust($color-madera, $lightness: -10%);
+    }
+  }
+}
+
+section {
+  max-width: $ancho-max;
+  margin: 0 auto;
+  padding: 60px;
+
+  > h2 {
+    text-align: center;
+    color: $color-oliva;
+    font-size: 2rem;
+  }
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    article {
+      background-color: $color-blanco;
+      padding: 30px;
+      border-radius: 6px;
+      border-top: 4px solid $color-madera;
+
+      h3 {
+        margin-top: 0;
+        color: $color-madera;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  background-color: $color-oliva;
+  color: $color-arena;
+
+  p {
+    margin: 0;
+  }
+}
+
+// ===== Estilos mobile =====
+// Se cargan al final para que pisen los estilos desktop
+@include meta.load-css('mobile');
