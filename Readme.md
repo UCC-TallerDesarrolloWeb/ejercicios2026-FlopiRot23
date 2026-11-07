@@ -60,6 +60,7 @@
 - [x] Mostrar/Ocultar Dialog
 - [x] Operaciones Matemáticas
 - [x] Conversor de Unidades II
+- [x] Operaciones Matemáticas II
 - [x] Renderizado Dinámico
 - [x] Renderizado Dinámico del Dialog
 - [x] Carrito de Compras con localstorage
