@@ -1,5 +1,3 @@
-@use 'sass:color';
-@use 'sass:meta';
 @use 'variables' as *;
 
 // ===== Estilos desktop =====
@@ -81,7 +79,7 @@ nav {
     border-radius: 4px;
 
     &:hover {
-      background-color: color.adjust($color-madera, $lightness: -10%);
+      background-color: #6d4c41;
     }
   }
 }
@@ -146,5 +144,5 @@ footer {
 }
 
 // ===== Estilos mobile =====
-// Se cargan al final para que pisen los estilos desktop
-@include meta.load-css('mobile');
+// Se importan al final para que pisen los estilos desktop
+@import 'mobile';

@@ -4,6 +4,7 @@ function Header({ logueado, setLogueado }) {
   const navigate = useNavigate()
 
   const handleLogout = () => {
+    localStorage.removeItem('logueado')
     setLogueado(false)
     navigate('/login')
   }

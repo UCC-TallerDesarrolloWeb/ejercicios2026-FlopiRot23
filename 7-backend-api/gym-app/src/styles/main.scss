@@ -1,0 +1,22 @@
+@use 'variables' as *;
+@use 'layout';
+@use 'login';
+@use 'cards';
+@use 'poke';
+@use 'store';
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $color-claro;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: $color-oscuro;
+}

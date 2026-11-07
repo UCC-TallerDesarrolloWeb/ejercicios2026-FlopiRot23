@@ -1,0 +1,64 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Cabezal Sparring",
+      "descripcion": "Cabezal de Sparring.",
+      "categoria": "Protectores",
+      "marca": "Gran Marc",
+      "talle": ["1", "2", "3"],
+      "precio": 35000,
+      "imagen": "cabezal-cerrado.webp"
+    },
+    {
+      "id": "2",
+      "nombre": "Dobok Dan",
+      "descripcion": "Dobok aprobado para torneos internacionales.",
+      "categoria": "Dobok",
+      "marca": "Daedo",
+      "talle": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "precio": 115000,
+      "imagen": "dobok.webp"
+    },
+    {
+      "id": "3",
+      "nombre": "Escudo de Potencia",
+      "descripcion": "Escudo de potencia para entrenamientos.",
+      "categoria": "Entrenamiento",
+      "marca": "Gran Marc",
+      "talle": ["s/talle"],
+      "precio": 51700,
+      "imagen": "escudo-potencia.webp"
+    },
+    {
+      "id": "4",
+      "nombre": "Par de focos redondos",
+      "descripcion": "Par de focos de 25cm x 25cm para hacer entrenamiento.",
+      "categoria": "Entrenamiento",
+      "marca": "Gran Marc",
+      "talle": ["s/talle"],
+      "precio": 15000,
+      "imagen": "foco-con-dedos.webp"
+    },
+    {
+      "id": "5",
+      "nombre": "Guantes 10 onzas",
+      "descripcion": "Guantes de Sparring de 10 onzas habilitados para torneos internacionales",
+      "categoria": "Protectores",
+      "marca": "Daedo",
+      "talle": ["s/talle"],
+      "precio": 35000,
+      "imagen": "protectores-manos.webp"
+    },
+    {
+      "id": "6",
+      "nombre": "Protectores Pie",
+      "descripcion": "Protectores de Pie habilitados para torneos internacionales",
+      "categoria": "Protectores",
+      "marca": "Daedo",
+      "talle": ["XXS", "XS", "S", "M", "L", "XL"],
+      "precio": 35000,
+      "imagen": "protectores-pies.webp"
+    }
+  ]
+}

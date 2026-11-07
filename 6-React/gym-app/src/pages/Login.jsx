@@ -11,6 +11,7 @@ function Login({ setLogueado }) {
 
     if (usuario === 'admin' && password === 'admin') {
       console.log('Login OK')
+      localStorage.setItem('logueado', 'true')
       setLogueado(true)
       navigate('/actividades')
     } else {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from '@components/Layout'
 import Home from '@pages/Home'
@@ -9,11 +9,6 @@ function App() {
   // guardo si el usuario esta logueado o no
   // arranca con lo que haya en localStorage para no perder la sesion al recargar
   const [logueado, setLogueado] = useState(localStorage.getItem('logueado') === 'true')
-
-  // cada vez que cambia logueado lo guardo en localStorage
-  useEffect(() => {
-    localStorage.setItem('logueado', logueado)
-  }, [logueado])
 
   return (
     <Routes>
